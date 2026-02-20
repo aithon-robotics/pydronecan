@@ -99,7 +99,7 @@ else:
                                     data=list(frame.data),
                                 )
                             self._bus.send(msg)
-                            self._bus.flush_tx_buffer()
+                            # self._bus.flush_tx_buffer()
 
                             frame.ts_monotonic = time.monotonic()
                             frame.ts_real = time.time()
